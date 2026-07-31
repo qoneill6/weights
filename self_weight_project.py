@@ -1,5 +1,5 @@
 #gym math
-
+import streamlit as st
 m= [45,25,10,5,2.5]
 b = [90,50,20,10,5]
 def find_m (insert,weight,c):
@@ -117,9 +117,7 @@ def p():
             return pwork(count-1)
     re=pwork(count)
     return re
-    
 
-    
 def changes(x):
     g=p()
     if x==b:
@@ -130,8 +128,9 @@ def changes(x):
         print (f"Start by putting {calc(g[0],m)} on the machine")
         for i in range(1,len(g)):
             print (changem(g[i-1],g[i]))
-    
-                
+
+# this is where i am starting to write interface 
+
 
 
 
