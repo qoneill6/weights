@@ -5,7 +5,7 @@ m= [45,25,10,5,2.5]
 b = [90,50,20,10,5]
 
 st.title("Weight clalculator")
-st.header( "Please selcect you means of lifing and what you want calculated ")
+st.header( "Please selcect your means of lifing and what you want calculated ")
 
 
 def find_m (insert,weight,c):
