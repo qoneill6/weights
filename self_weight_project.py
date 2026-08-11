@@ -71,17 +71,17 @@ def changeb(old,new):
         case "1":  #same
             return f"The same weight{calc(new,b)}" 
         case "2":#old>new
-            return f"Take off {old-new}lb from the bar should now look like {calc(new,b)}"    
+            return f"You should now have {new}lb on the bar should now look like {calc(new,b)}"    
         case "3":# new>old
-            return f"Add {new-old}lb to the bar should now look like {calc(new,b)}"
+            return f"You should now have {new}lb on the bar should now look like {calc(new,b)}"
         case "4":#old>new and (old or new )% !=0
             old=round5(old)
             new= round5(new)
-            return f"Take off {old-new}lb from the bar should now look like {calc(new,b)}(rounded)"   
+            return f"You should now have {new}lb on the bar should now look like {calc(new,b)}(rounded)"   
         case"5":# new>old and (old or new )%5 !=0
             old=round5(old)
             new= round5(new)
-            return f"Add {new-old}lb to the bar should now look like {calc(new,b)} (rounded)"
+            return f"You should now have {new}lb on the bar should now look like {calc(new,b)} (rounded)"
 def changem(old,new):
     if old==new : hold = "1"
     if old>new: hold = "2"
@@ -92,19 +92,18 @@ def changem(old,new):
         case "1":  #same
             return f"The same weight{calc(new,m)}" 
         case "2":#old>new
-            return f"Take off {old-new}lb from the machine should now look like {calc(new,m)}"    
+            return f"You should now have {new}lb on the machine should now look like {calc(new,m)}"    
         case "3":# new>old
-            return f"Add {new-old}lb to the machine should now look like {calc(new,m)}"
+            return f"You should now have {new}lb on machine should now look like {calc(new,m)}"
         case "4":#old>new and (old or new )% !=0: 
             old =round2(old)
             new = round2(new)
         
-            return f"Take off {old-new}lb from the machine should now look like {calc(new,m)}(rounded)"   
+            return f"You should now have {new}lb on machine should now look like {calc(new,m)}(rounded)"   
         case"5": #new>old and (old or new )%5 !=0
             old = round2(old)
             new = round2(new)
-            
-            return f"Add {new-old}lb to the machine should now look like {calc(new,m)}(rounded)"
+            return f"You should now have {new}lb on the machine should now look like {calc(new,m)}(rounded)"
 def change1(x):
     if x==b :
         return changeb(old,new)
